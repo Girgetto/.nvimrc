@@ -172,3 +172,12 @@ nnoremap <C-k> :cprev<CR>  " use ctrl + k to go previous in quickfix
 
 " Set guidcursor to avoid change cursor shape
 set guicursor=
+
+" Yank to system clipboard
+vnoremap <leader>y "+y
+nnoremap <leader>y "+y
+nnoremap <leader>Y "+yg_
+
+" Paste from system clipboard
+nnoremap <leader>p "+p
+vnoremap <leader>p "+p
