@@ -181,3 +181,6 @@ nnoremap <leader>Y "+yg_
 " Paste from system clipboard
 nnoremap <leader>p "+p
 vnoremap <leader>p "+p
+
+" FZF Configuration
+nnoremap <leader>rg :call fzf#vim#grep("rg --hidden --glob '!.git/' --glob '!node_modules/**' --glob '!package-lock.json' --glob '      !.output/**' --no-ignore --smart-case ''", 1)<CR>
